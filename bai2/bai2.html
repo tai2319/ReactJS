@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+ 
+    
+    <script>
+       class ThongTin {
+  constructor(ten, moTa) {
+    this.ten = ten;
+    this.moTa = moTa;
+  }
+
+  tinhToan(thamSo = 1) {
+    return thamSo * 3;
+  }
+}
+
+class HinhHoc extends ThongTin {
+  constructor(ten, moTa, chieuDai) {
+    super(ten, moTa);
+    this.chieuDai = chieuDai;
+  }
+
+  tinhToan(thamSo) {
+    return this.chieuDai * thamSo;
+  }
+}
+
+// Tạo các đối tượng của lớp HinhHoc và gọi các thuộc tính và hàm
+const hinhTron = new HinhHoc("Hình tròn", "Hình tròn có một đường kính", 5);
+const hinhChuNhat = new HinhHoc("Hình chữ nhật", "Hình chữ nhật có 4 cạnh", 6);
+console.log("Hình tròn:");
+console.log("Tên:", hinhTron.ten);
+console.log("Mô tả:", hinhTron.moTa);
+console.log("Chiều dài:", hinhTron.chieuDai);
+console.log("Kết quả tính toán với tham số 4:", hinhTron.tinhToan(4));
+
+console.log("\nHình chữ nhật:");
+console.log("Tên:", hinhChuNhat.ten);
+console.log("Mô tả:", hinhChuNhat.moTa);
+console.log("Chiều dài:", hinhChuNhat.chieuDai);
+console.log("Kết quả tính toán với tham số 3:", hinhChuNhat.tinhToan(3));
+
+        //   class Animals {
+        //     constructor(name) {
+        //       this._name = name;
+        //     }
+        //     printAnimals ()  {
+
+        //       console.log(this._name);
+        //     };
+        //     addAnimals(){
+
+        //     }
+
+        //   }
+        //   const Animal1 = new Animals('dog')
+        //   const Animal2= new Animals('cat')
+        //   const Animal3 = new Animals('fish')
+
+        //   Animal1.printAnimals()
+    </script>
+  </body>
+</html>

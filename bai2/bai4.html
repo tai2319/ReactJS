@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person {
+  constructor(name) {
+    this._name = name;
+  }
+
+  get name() {
+    return this._name;
+  }
+
+  set name(newName) {
+    this._name = newName;
+  }
+
+  walk() {
+    console.log(`${this._name} is walking.`);
+  }
+}
+
+class Programmer extends Person {
+  constructor(name, language) {
+    super(name);
+    this._language = language;
+  }
+
+  get language() {
+    return this._language;
+  }
+
+  set language(newLanguage) {
+    this._language = newLanguage;
+  }
+
+  writeCode() {
+    console.log(`${this._name} is writing code in ${this._language}.`);
+  }
+}
+
+// Khai báo đối tượng thuộc lớp Programmer và gọi các hàm của lớp Person và Programmer
+const programmer = new Programmer("John", "JavaScript");
+
+programmer.walk(); // Kết quả: John is walking.
+console.log("Tên của programmer:", programmer.name); // Kết quả: Tên của programmer: John
+programmer.name = "Jane";
+console.log("Tên mới của programmer:", programmer.name); // Kết quả: Tên mới của programmer: Jane
+console.log("Ngôn ngữ lập trình của programmer:", programmer.language); // Kết quả: Ngôn ngữ lập trình của programmer: JavaScript
+programmer.language = "Python";
+console.log("Ngôn ngữ lập trình mới của programmer:", programmer.language); // Kết quả: Ngôn ngữ lập trình mới của programmer: Python
+programmer.writeCode(); // Kết quả: Jane is writing code in Python.
+
+    </script>
+</body>
+</html>
