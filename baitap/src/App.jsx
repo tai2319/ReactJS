@@ -1,11 +1,14 @@
 import "./App.css";
-
-import Caculator from "./Component/caculator/Caculator";
+// import Regex from "./Component/FormContact/Contact";
+import Healform from "./Component/FormContact/heal";
 
 function App() {
   return (
     <>
-      <Caculator />
+      {/* <Regex /> */}
+      <div>
+        <Healform />
+      </div>
     </>
   );
 }

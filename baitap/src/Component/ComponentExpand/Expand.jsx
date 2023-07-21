@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 class Expand extends Component {
   constructor(props) {
     super(props);
@@ -6,6 +7,7 @@ class Expand extends Component {
       isExpand: true,
     };
   }
+
   handle = () => {
     if (this.state.isExpand) {
       this.setState({ isExpand: false });
