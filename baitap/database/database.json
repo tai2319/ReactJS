@@ -1,0 +1,65 @@
+{
+    "Users":[
+        {
+            "id" : 1,
+            "name": "nguyen van a"
+            
+        },
+        {
+            "id" : 2,
+            "name": "nguyen van b"
+            
+        },
+        {
+            "id" : 3,
+            "name": "nguyen van c"
+            
+        },
+        {
+            "id" : 4,
+            "name": "nguyen van d"
+            
+        }
+    ],
+  
+    "categories": [
+    {
+      "id": 1,
+      "name": "Star"
+    },
+    {
+      "id": 2,
+      "name": "cinema"
+    },
+    {
+      "id": 3,
+      "name": "Beauty"
+    }
+  ],
+  "Post": [
+    {
+      "title": "post title 1",
+      "content": "duogn qua cang",
+      "author": "congnv",
+      "categories_id": 1,
+      "id": 1,
+      "user_id":1
+    },
+    {
+      "id": 2,
+      "title": "Cap nhat moi tu RapViet",
+      "content": "asjdqjd sjqwuendas,asdoiqlk",
+      "author": "Ninh Chau",
+      "categories_id": 1,
+      "user_id":2
+    },
+    {
+      "title": "post title 3",
+      "content": "duogn qua",
+      "author": "congnv",
+      "categories_id": 1,
+      "id": 3,
+      "user_id":3
+    }
+  ]
+}
