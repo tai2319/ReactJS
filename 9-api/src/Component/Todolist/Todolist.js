@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-const api = "	https://jsonplaceholder.typicode.com/todos";
+const api = "https://jsonplaceholder.typicode.com/users//todos";
 
 const Todolist = () => {
   const [todos, setTodos] = useState([]);
